@@ -1,0 +1,17 @@
+Code :
+
+--mYSQL CODE FOR SUROJIT--
+create table Test(
+id integer NOT NULL AUTO_INCREMENT, --SET autoincrement bcoz id is a primary key and you dont need to put id values again and again.This function genarates automatic ids in assending order--
+ORDER_date date NOT NULL, --DATE FUNCTION--
+status varchar(10), 
+customer_id int(20) NOT NULL,
+PRIMARY KEY (id) --SET (id) AS PRIMARY KEY--
+);
+
+insert into Test(ORDER_date, status, customer_id) values('2020-01-01', "placed   ", 545);
+insert into Test(ORDER_date, status, customer_id) values('2019-12-30', "placed   ", 541);
+insert into Test(ORDER_date, status, customer_id) values('2020-08-12', "intransit", 545);
+insert into Test(ORDER_date, status, customer_id) values('2019-11-09', "delivered", 532);
+--Baki values gulo bosia nis areer--
+select * from Test;
